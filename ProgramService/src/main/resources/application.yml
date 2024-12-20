@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  # Point to your local Eureka server
+  instance:
+    hostname: ${HOSTNAME:localhost}  # Dynamic hostname (optional)
+    metadataMap:
+      zone: default
+
+server:
+  port: 8082
